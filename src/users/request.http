@@ -1,0 +1,43 @@
+### Sign up a user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+    "email": "dolamy@gmail.com",
+
+    "password": "dolamy123"
+}
+
+### Sign in an existing user
+POST http://localhost:3300/auth/signin
+content-type: application/json
+
+{
+    "email": "admin@gmail.com",
+
+    "password": "admin"
+}
+
+### Get the currently signed in user
+GET http://localhost:3000/auth
+
+### Sign out
+POST http://localhost:3000/auth/signout
+
+### Find a particular user with a given ID
+Get http://localhost:3000/auth
+
+### Find all users with a given email
+Get http://localhost:3000/auth?email=we00043701@gmail.com
+
+### Delete user with a given id
+Delete http://localhost:3000/auth
+
+### Update user with a given id
+Post http://localhost:3000/auth/5
+content-type: application/json
+
+{
+    "password": "khoailangnuong123"
+}
+

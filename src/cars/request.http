@@ -1,0 +1,25 @@
+// Admin creates a car
+POST http://localhost:3500/cars/create_car
+Content-Type: application/json
+
+{
+  "name": "suzuki",
+  "maker": "FX-700",
+  "price": 50000,
+  "photo": "car.jpeg"
+}
+
+# // Admin updates a car
+# POST http://localhost:3300/cars/update_car/1
+# Content-Type: application/json
+
+# {
+#   "name": "lunatic",
+#   "maker": "FX-700",
+#   "price": 50000,
+#   "photo": "car.jpeg"
+# }
+
+# // Admin deletes a car
+# POST http://localhost:3300/cars/delete_car/1
+
